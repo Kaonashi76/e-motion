@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/main.min.css">
+  <title>Сеть проката электросамокатов</title>
+  <link rel="shortcut icon" href="./img/icons/favicon.ico" type="image/x-icon">
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=1693efd2-1ece-483f-80a1-5adeb008ce48
+  &lang=ru_RU" type="text/javascript"></script>
+</head>
+<body>
+  <header class="header container">
+    <div class="header_geolocation geolocation">
+      
+      
+      <div class="select">
+        <div class="select__header">
+          <img class="geolocation_mark" 
+          src="./img/mark.svg" 
+          alt="Метка">
+          <span class="select__current geolocation_text"></span>
+        </div>
+      
+        <div class="select__body">
+          <div class="select__item">Москва</div>
+          <div class="select__item">Курск</div>
+          <div class="select__item">Дербент</div>
+          <div class="select__item">Белгород</div>
+          <div class="select__item">Севастополь</div>
+          <div class="select__item">Симферополь</div>
+          <div class="select__item">Ялта</div>
+          <div class="select__item">Пенза</div>
+          <div class="select__item">Алушта</div>
+          <div class="select__item">Армавир</div>
+        </div>
+      </div>
+     
+    
+    </div>
+    <nav class="header_menu">
+      <ul class="menu">
+        <li><a href="#use">Как пользоваться</a></li>
+        <li><a href="#tarif">Тарифы</a></li>
+        <li><a href="#blog">Блог</a></li>
+      </ul>
+    </nav>
+    <div class="contacts">
+      <div class="contacts_phone">
+        <img src="./img/phone.svg" alt="Телефон">
+        <a href="tel:79787870707"> +7 (978) 787 07 07</a>
+      </div>
+      <p class="contacts_support">
+        техподдержка
+      </p>
+    </div>
+    <div class="hamburger-menu">
+      <input id="menu__toggle" type="checkbox" />
+      <label class="menu__btn" for="menu__toggle">
+        <span></span>
+      </label>
+  
+      <ul class="menu__box">
+        
+        <li><a class="menu__item" href="#use">Как пользоваться</a></li>
+        <li><a class="menu__item" href="#tarif">Тарифы</a></li>
+        <li><a  class="menu__item" href="#blog">Блог</a></li>
+        <li class="menu__item contacts_phone-burger" >
+          <a href="tel:79787870707"> +7 (978) 787 07 07</a>
+          <p class="contacts_support">
+          техподдержка
+        </p>
+        </li>
+        
+      </ul>
+  
+    </div>
+  </header>
+  <main>
+    <div class="video">
+      <img class="bg" src="./img/temp.png" alt="">
+      <img class="mobile-bg" src="./img/mobile-bg.png" alt="">
+     <!-- <video сlass="" src="./temp.mp4" autoplay muted loop></video>  -->
+      <div class="logo">
+        <img src="./img/main_screen_logo.png" alt="Логотип">
+      </div>
+  </div>
+    <section class="main-screen container">
+      <div class="enjoy">
+        
+      <h1 class="enjoy_header">Насладись движением</h1>
+      <div class="enjoy_contacts">
+        <p>мы всегда на связи</p>
+        <div class="enjoy_contacts-decoration"></div>
+
+        <div class="enjoy_contacts_social social">
+
+          <a class="social_link" href="https://clck.ru/Qq9q8">
+             <img class="social_link-youtube" 
+                  src="./img/social/youtube.svg"
+                  alt="Ютуб">
+          </a>
+
+          <a class="social_link" href="https://vk.com/emotion_scootershering">
+            <img class="social_link-vk" 
+                 src="./img/social/vk.svg" 
+                 alt="Вконтакте">
+          </a>
+
+          <a class="social_link" href="https://instagram.com/emotion_scootersharing">
+            <img class="social_link-instagram" 
+                 src="./img/social/instagram.svg" 
+                 alt="Инстаграм">
+          </a>      
+        </div>
+
+      </div>
+      </div>
+      <div class="market">
+        <a href="https://play.google.com/store/apps/details?id=ru.emotion24.velorent.official">
+          <img class="market_googlePlay" src="./img/market/googlePlay.svg" alt="googlePlay">
+        </a>
+        <a href="https://apps.apple.com/ru/app/e-motion-sharing/id1473799847">
+          <img class="market_appStore" src="./img/market/appStore.svg" alt="appStore">
+        </a>
+      </div>
+    </section>
+    <section class="container advantages">
+   
+        <h2 class="advantages_header header-main">Новый взгляд на прокат микротранспорта</h2>
+        <p class="advantages_info">
+          Комплекс проката e-motion включает в себя уникальные станции
+          автоматического заряда и удерживания микроэлектротранспорта. 
+          Катайтесь по всему городу и оставляйте самокат
+          <br> на удобной для Вас станции.</p>
+        </div>
+      <div class="advantages_wrapp">
+        <img class="advantages_img" src="./img/scooter.png" alt="Cамокат">
+        <svg class="advantages_wrapp_polygon-gradient advantages_wrapp_polygon-gradient-animation-rotate" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+            <path class="advantages_wrapp_polygon-gradient-animation" d="M102.2 43.6a40 40 0 0138.6-10.3l91 24.3A40 40 0 01260 86l24.4 91a40 40 0 01-10.4 38.6L207.5 282a40 40 0 01-38.7 10.4L78 268a40 40 0 01-28.3-28.3l-24.3-90.9a40 40 0 0110.3-38.6l66.6-66.6z" stroke="url(#paint0_linear)" stroke-width="3"/>
+            <defs>
+              <linearGradient id="paint0_linear" x1="19.3" y1="199.1" x2="290.5" y2="126.4" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#F16933"/>
+                <stop offset="1" stop-color="#F9C90C"/>
+              </linearGradient>
+            </defs>
+        </svg>
+        
+       
+          <svg class="advantages_wrapp_polygon-gray
+          advantages_wrapp_polygon-gray-animation-rotate" viewBox="0 0 300 317" fill="none" >
+              <path class="advantages_wrapp_polygon-gray-animation" d="M101.2 43.6a40 40 0 0138.6-10.3l91 24.3A40 40 0 01259 86l24.4 91a40 40 0 01-10.4 38.6L206.5 282a40 40 0 01-38.7 10.4L77 268a40 40 0 01-28.3-28.3l-24.3-90.9a40 40 0 0110.3-38.6l66.6-66.6z" stroke="#9F9AB1" stroke-width="3"/>
+          </svg>
+        
+        <div class="advantages_list">
+          <ul>
+            <li>
+              <svg class="advantages_icon advantages_icon_charge " fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 95 44">
+                <path class="advantages_icon_charge-animation_left" d="M37 2H13v40h33" stroke="url(#paint0_linear)" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                <path class="advantages_icon_charge-animation_right" d="M70 42h23V2H60" stroke="url(#paint1_linear)" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M2 12v20" stroke="url(#paint2_linear)" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                <path class="advantages_icon_charge-animation_lightning" d="M58 39L41 22h24L48 5" stroke="url(#paint3_linear)" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                <defs>
+                  <linearGradient id="paint0_linear" x1="29.7" y1="2.2" x2="29.7" y2="41.8" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#FFBD23"/>
+                    <stop offset="1" stop-color="#F26124"/>
+                  </linearGradient>
+                  <linearGradient id="paint1_linear" x1="76.5" y1="2.2" x2="76.5" y2="41.8" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#FFBD23"/>
+                    <stop offset="1" stop-color="#F26124"/>
+                  </linearGradient>
+                  <linearGradient id="paint2_linear" x1="2.7" y1="12.1" x2="2.7" y2="31.9" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#FFBD23"/>
+                    <stop offset="1" stop-color="#F26124"/>
+                  </linearGradient>
+                  <linearGradient id="paint3_linear" x1="53.1" y1="5.4" x2="53.1" y2="38.6" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#FFBD23"/>
+                    <stop offset="1" stop-color="#F26124"/>
+                  </linearGradient>
+                </defs>
+              </svg>
+              <div class="advantages_list_wrapp">
+              <p class="advantages_list_header">Автоматическая зарядка</p>
+              <p class="advantages_list_text">станция автоматически заряжает<br>и удерживает элетротранспорт</p>
+              </div>
+            </li>
+            <li>
+              <svg class="advantages_icon advantages_icon_mobile advantages_icon_mobile-animation" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="-15 0 70 134">
+                <path d="M14.6 5.9a1 1 0 010-2h10.8a1 1 0 010 2H14.6z" fill="url(#paint0_linear)"/>
+                <path d="M4.38 77A4.39 4.39 0 010 72.6V4.4C0 1.97 1.96 0 4.38 0h31.24A4.39 4.39 0 0140 4.4v68.2c0 2.43-1.96 4.4-4.38 4.4H4.38zm-2.4-4.42a2.4 2.4 0 002.4 2.4h31.24a2.4 2.4 0 002.4-2.4V64.7H1.98v7.88zm0-9.87h36.05V10.1H1.99V62.7zM4.39 2a2.4 2.4 0 00-2.4 2.4v3.7h36.05V4.4a2.4 2.4 0 00-2.4-2.4H4.38z" fill="url(#paint1_linear)"/>
+                <path d="M20 73.78a4 4 0 010-7.99 4 4 0 010 7.99zm0-5.99a2 2 0 000 4 2 2 0 000-4z" fill="url(#paint2_linear)"/>
+                <path d="M28.81 39.8c-1 0-1.92.33-2.68.9l-.1.05c-.02.03-.05.04-.06.07a4.55 4.55 0 002.85 8.1 4.55 4.55 0 00-.01-9.11zm0 8.1a3.54 3.54 0 01-2.52-6.01l2.13 2.71c.1.13.25.2.39.2.11 0 .22-.04.3-.11.23-.17.26-.5.1-.72l-2.12-2.7a3.53 3.53 0 015.25 3.1 3.54 3.54 0 01-3.53 3.54z" fill="url(#paint3_linear)"/>
+                <path d="M14.09 40.6a4.36 4.36 0 10-6.16 6.18 4.32 4.32 0 006.16 0 4.35 4.35 0 001.27-3.1 4.29 4.29 0 00-1.27-3.08zm-.7 5.48a3.36 3.36 0 11.94-2.93h-3.28a.5.5 0 00-.5.51c0 .28.22.5.5.5h3.28c-.1.72-.42 1.38-.94 1.92z" fill="url(#paint4_linear)"/>
+                <path d="M15.27 50.8c-.2 0-.38-.1-.5-.26a.6.6 0 01.17-.82c.07-.04 7.47-4.96 7.29-10.76-.02-.43-.12-.73-.28-.87-.37-.3-1.28-.2-2.24-.08-1.42.17-3.18.4-4.65-.55a2.2 2.2 0 01-1.07-1.9c-.07-3.5 6.35-9.12 8.56-10.67a.58.58 0 01.81.15c.18.27.11.64-.15.82-2.76 1.93-8.11 7.07-8.06 9.66.02.42.17.7.52.93 1.12.71 2.6.53 3.88.38 1.23-.16 2.4-.3 3.15.36.44.38.66.94.69 1.73.2 6.44-7.5 11.56-7.82 11.77a.42.42 0 01-.3.11z" fill="url(#paint5_linear)"/>
+                <path d="M25.07 25.24a1.6 1.6 0 01-1.6-1.6 1.6 1.6 0 113.2 0c-.02.88-.73 1.6-1.6 1.6zm0-2.53c-.5 0-.92.42-.92.93 0 .5.42.93.92.93s.92-.43.92-.93a.93.93 0 00-.92-.93z" fill="url(#paint6_linear)"/>
+                <defs>
+                  <linearGradient id="paint0_linear" x1="20" y1="3.91" x2="20" y2="5.91" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#FFBD23"/>
+                    <stop offset="1" stop-color="#F26124"/>
+                  </linearGradient>
+                  <linearGradient id="paint1_linear" x1="20" y1="0" x2="20" y2="77" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#FFBD23"/>
+                    <stop offset="1" stop-color="#F26124"/>
+                  </linearGradient>
+                  <linearGradient id="paint2_linear" x1="20" y1="65.79" x2="20" y2="73.78" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#FFBD23"/>
+                    <stop offset="1" stop-color="#F26124"/>
+                  </linearGradient>
+                  <linearGradient id="paint3_linear" x1="28.82" y1="39.81" x2="28.82" y2="48.92" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#FFBD23"/>
+                    <stop offset="1" stop-color="#F26124"/>
+                  </linearGradient>
+                  <linearGradient id="paint4_linear" x1="11.01" y1="39.32" x2="11.01" y2="48.06" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#FFBD23"/>
+                    <stop offset="1" stop-color="#F26124"/>
+                  </linearGradient>
+                  <linearGradient id="paint5_linear" x1="18.73" y1="24.79" x2="18.73" y2="50.8" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#FFBD23"/>
+                    <stop offset="1" stop-color="#F26124"/>
+                  </linearGradient>
+                  <linearGradient id="paint6_linear" x1="25.07" y1="22.03" x2="25.07" y2="25.24" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#FFBD23"/>
+                    <stop offset="1" stop-color="#F26124"/>
+                  </linearGradient>
+                </defs>
+              </svg>
+              <div class="advantages_list_wrapp">
+                <p class="advantages_list_header">
+                  Удобное приложение
+                </p>
+                <p class="advantages_list_text">
+                  позволяет выбрать удобную станцию <br>
+                  и осуществить прокат
+                </p>
+              </div>
+          </li>
+            <li>
+              <svg class="advantages_icon advantages_icon_clock" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 76 75">
+                 <path class="advantages_icon_clock-animation" d="M73.8 67.5H70V43.7c0-.6-.6-1.2-1.3-1.2-.4 0-.7.2-1 .5L50.2 68c-.4.6-.2 1.4.3 1.8l.8.2h16.2v3.7c0 .7.6 1.3 1.3 1.3.7 0 1.2-.6 1.2-1.3V70h3.8c.7 0 1.2-.6 1.2-1.3 0-.7-.6-1.2-1.3-1.2zm-6.3 0H53.7l13.8-19.8v19.8z" fill="url(#paint0_linear)"/> 
+                 <path class="advantages_icon_clock-animation" d="M51.3 72.5H36.5l13.7-16.2.1-.1c2.6-3.8 1.7-9-2-11.8a10 10 0 00-15.8 8.1c0 .7.6 1.3 1.3 1.3.7 0 1.2-.6 1.2-1.3a7.5 7.5 0 0111.9-6c2.6 1.9 3.2 5.5 1.4 8.2L32.8 73c-.4.6-.4 1.3.2 1.8.2.2.5.3.8.3h17.5c.7 0 1.2-.6 1.2-1.3 0-.6-.6-1.2-1.3-1.2z" fill="url(#paint1_linear)"/> 
+                 
+                <path d="M33.8 66.3c0-.7-.5-1.3-1.2-1.3a31.2 31.2 0 01-30-30h4.9c.7 0 1.3-.6 1.3-1.3 0-.6-.6-1.2-1.3-1.2h-5a31.2 31.2 0 0130-30v3.8c0 .6.6 1.2 1.3 1.2.6 0 1.2-.6 1.2-1.3V2.5C51 3.2 64 16 65 32L60 27c-.4-.4-1.2-.4-1.7 0-.5.6-.5 1.3 0 1.8l7 7 .5.4H66.7l.5-.3 7-7c.5-.6.5-1.4 0-1.9-.5-.4-1.2-.4-1.7 0l-5 5c-1-17.9-15.7-32-33.7-32h-.1C15 0 0 15 0 33.7v.1c0 18.2 14.4 33 32.5 33.7.7 0 1.3-.6 1.3-1.2z" fill="url(#paint2_linear)"/>
+                <path d="M50.5 17c-.4-.5-1.2-.5-1.7 0L35.3 30.4a4 4 0 00-3.1 0L25.8 24c-.5-.5-1.3-.4-1.8 0-.4.5-.4 1.3 0 1.8l6.4 6.3a3.7 3.7 0 106.7 0l13.4-13.4c.5-.5.5-1.3 0-1.7zM34.6 34.6c-.5.5-1.2.5-1.7 0-.5-.4-.5-1.2 0-1.7s1.3-.5 1.7 0c.5.5.5 1.2 0 1.7z" fill="url(#paint3_linear)"/>
+                <defs>
+                  
+                  <linearGradient id="paint2_linear" x1="37.3" y1="0" x2="37.3" y2="67.5" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#FFBD23"/>
+                    <stop offset="1" stop-color="#F26124"/>
+                  </linearGradient>
+                  <linearGradient id="paint3_linear" x1="37.3" y1="16.6" x2="37.3" y2="37.5" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#FFBD23"/>
+                    <stop offset="1" stop-color="#F26124"/>
+                  </linearGradient>
+                  <linearGradient id="paint0_linear" x1="62.5" y1="42.5" x2="62.5" y2="75" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#FFBD23"/>
+                    <stop offset="1" stop-color="#F26124"/>
+                  </linearGradient>
+                  <linearGradient id="paint1_linear" x1="42.5" y1="42.5" x2="42.5" y2="75" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#FFBD23"/>
+                    <stop offset="1" stop-color="#F26124"/>
+                  </linearGradient>
+                </defs>
+              </svg>
+              <div class="advantages_list_wrapp">
+                <p class="advantages_list_header">24/7</p>
+                <p class="advantages_list_text">круглосуточная работа системы дает возможность <br>
+                кататься в любое удобное Вам время
+                </p>
+              </div>
+            </li>
+          </ul>
+        <div>
+          
+          
+        </div>
+      </div>
+
+    </section>
+     <section id="use" class="container usage">
+      <h2 class="usage_header header-main">Как пользоваться</h2>
+      <div class="usage_wrapp">
+        <div class="usage_slides">
+          <img class=" usage_slides_img usage_slides_img-active" src="./img/usage_screen1.png" alt="Скачать мобильное приложение">
+          <img class="usage_slides_img" src="./img/usage_screen2.png" alt="Пройти регистрацию">
+          <img class="usage_slides_img" src="./img/usage_screen3.png" alt="Найти станцию">
+          <img class="usage_slides_img" src="./img/usage_screen4.png" alt="Взять самокат">
+        </div>
+        <div class="usage_wrapp-slides">
+          <div class="usage_slides-text_container">
+            <button class="button_slider button_left"></button>
+            <div class="usage_slides-text usage_slides-text-active">
+              <p class="usage_slides-text-header">Скачать бесплатное <br>
+              мобильное приложение <br>
+              e-motion  </p>
+              <p class="usage_slides-text-info">Приложение доступно <br>
+                для iOS и Android</p>
+            </div>
+            <div class="usage_slides-text">
+              <p class="usage_slides-text-header">Пройти быструю <br> регистрацию </p>
+                <p class="usage_slides-text-info">Для регистрации Вам понадобится <br>
+                  документ, удостоверяющий личность <br>
+                  (паспорт или водительское <br>
+                  удостоверение)
+                 </p>
+            </div>
+            <div class="usage_slides-text">
+              <p class="usage_slides-text-header">Найти ближайшую <br> станцию проката</p>
+              <p class="usage_slides-text-info">Все доступные самокаты<br>
+                отображаются на интерактивной <br>
+                карте онлайн в приложении
+               </p>
+            </div>
+            <div class="usage_slides-text">
+              <p class="usage_slides-text-header">Наслаждайтесь <br> прогулкой</p>
+              <p class="usage_slides-text-info"После того как загорится зеленая лампочка<br>
+                можно отстыковать самокат <br>
+                и кататься без ограничения времени
+               </p>
+            </div>
+            <button class="button_slider button_right"></button>
+          </div>
+          <a href="#" class="usage_full_instructions">Смотреть полную инструкцию</a>
+        </div>
+       
+        
+      </div>
+      <div class="usage_wrapp usage_steps">
+        <div class="usage_steps_wrapp">
+        <button data-index="1" class="usage_step usage_step-active">1</button>
+        <button data-index="2" class="usage_step">2</button>
+        <button data-index="3" class="usage_step">3</button>
+        <button data-index="4" class="usage_step">4</button> 
+        </div>
+       
+      </div>
+      <div class="usage_wrapp usage_steps_info">
+        <p>Скачать
+          мобильное
+          приложение</p>
+        <p>Пройти
+          регистрацию</p>
+        <p>Найти 
+          ближайшую
+          станцию проката</p>
+        <p>Взять самокат и 
+          наслаждаться
+          прогулкой</p>
+      </div>
+     </section>
+     <section id="tarif" class="map">
+      <h2 class="map_header header-main">Станции проката на карте</h2>
+      <div class="map_wrapp">
+        <div class="map_price_wrapp">
+          <p class="map_price_info">Найди на карте удобную станцию <br>
+            и узнай свой тариф</p>
+            <div class="map_price_container">
+            </div>
+        </div>
+       <div id="map"></div>
+      </div>
+      
+     </section>
+     <section id="blog" class="blog">
+      <h2 class="blog_header header-main">Блог e-motion</h2>
+      
+      <iframe class="blog_video"  src="https://www.youtube.com/embed/jpnhlGM5urQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <p class="blog_more">Хочешь узнать о нас больше?</p>
+      <a class="blog_more_button" href="https://instagram.com/emotion_scootersharing">Подробнее</a>
+     </section>
+     <!-- <section class="partners">
+      <h2 class="partners_header header-main">Наши партнеры</h2>
+      <div class="slider">
+
+        <div class="slider__wrapper">
+          <div class="slider__item">
+            <img class="" src=""></img>
+          </div>
+          <div class="slider__item">
+            <img class="" src=""></img>
+          </div>
+          <div class="slider__item">
+            <img class="" src=""></img>
+          </div>
+          <div class="slider__item">
+            <img class="" src=""></img>
+          </div>
+          <div class="slider__item">
+            <img class="" src=""></img>
+          </div>
+        </div>
+        <a class="slider__control slider__control_left" href="#" role="button"></a>
+        <a class="slider__control slider__control_right slider__control_show" href="#" role="button"></a>
+      </div>
+    
+     </section> -->
+ 
+  </main>
+  <footer class="footer">
+    <div class="footer_logo">
+      <img src="./img/logo/logo_footer.png" alt="Логотип">
+    </div>
+    <div class="footer_contacts contacts">
+      <a class="contacts_link contacts_link-phone" 
+         href="tel:79787870707">
+        +7 (978) 787 07 07 
+      </a>
+      <a class="contacts_link contacts_link-mail" 
+         href="mailto:office@e-motion24.ru">
+        office@e-motion24.ru
+      </a>
+    </div>
+  
+    <div class="footer_social social">
+      <a href="https://vk.com/emotion_scootershering" 
+         class="social_link">  
+         <img class="social_link-vk" 
+              src="./img/social/vk.svg" 
+              alt="Вконтакте">
+      <a href="https://instagram.com/emotion_scootersharing"            
+         class="social_link">
+         <img class="social_link-instagram" 
+              src="./img/social/instagram.svg" 
+              alt="Инстаграм">
+      </a>      
+      <a href="https://clck.ru/Qq9q8" 
+         class="social_link">
+         <img class="social_link-youtube" 
+              src="./img/social/youtube.svg"
+              alt="Ютуб">
+      </a>
+    </div>
+    <div class="footer_guide guide">
+      <div class="guide_link-gradient">
+        <a href="agreement.html" class="guide_link">Пользовательское соглашение</a>
+      </div>
+      <div class="guide_link-gradient">
+        <a href="https://www.instagram.com/emotion_scootersharing/?utm.." class="guide_link">FAQ <br> Вопросы и ответы</a>
+      </div>
+    </div>
+    <div class="footer_franchises franchises">
+        <a href="https://emotion-sharing.com/" class="franchises_link">
+          Франшиза и дитрибуция: 
+          <span class="franchises_link-hover">emotion-sharing.com</span>
+        </a>
+    </div>
+    <div class="footer_commercial commercial">
+      <a href="tel:79786507238" 
+         class="commercial_link">
+         По вопросам рекламы и PR
+      </a>
+    </div>
+    <div class="footer_address address">
+      <p class="address_legalAdress">
+        ООО «Э-МОУШЕН» 
+        <br>
+        Юр. адрес: 195196, г. Санкт-Петербург, ул. Стахановцев, д. 14, корп. 1, лит. А, пом. 621 
+        <br>
+        ИНН 7841067341; ОГРН 117787362021; КПП 780601001
+      </p>
+    </div>
+  </footer>
+ <script src="./js/index.js"></script>
+</body>
+</html>

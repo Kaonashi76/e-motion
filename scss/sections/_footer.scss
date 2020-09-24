@@ -1,0 +1,154 @@
+.footer{
+ 
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #121426;
+  color: #9f9ab1;
+  z-index: 3;
+  &_logo{
+    transform: translateY(-50px);
+
+    &::before{
+      content: "";
+      position: absolute;
+      display: block;
+      top:-5px;
+      left: -10px;
+
+      background-image: url("../img/shapes/polygon_logo-footer.svg");
+      background-size: contain;
+      background-repeat: no-repeat;
+      
+      width: 100px;
+      height: 100px;
+      z-index: -2;
+      animation: polygon 15s infinite;
+      animation-timing-function: linear;
+    }
+    img{
+      height: 100px;
+    }
+  }
+  &_contacts{
+    margin-top: 10px;
+    .contacts{
+      display: flex;
+      flex-direction: column;
+      &_link{
+        display: block;
+        text-align: center;
+        font-size: 20px;
+        transition: color .2s;
+        &:hover{
+          color: #fff;
+        }
+      }
+    }
+  }
+  .social{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 35px 0;
+    &_link{
+      display: block;
+      margin: 0 20px;
+      &-vk{
+      width: 33px;
+      height: 19px;
+      }
+      &-instagram{
+      width: 25px;
+      height: 25px;
+      }
+      &-youtube{
+      width: 35px;
+      height: 30px;  
+      }
+      &:hover > img{
+        animation: rotate .4s infinite;
+        animation-timing-function: linear;
+      }
+    }
+  }
+  .guide{
+    display: flex;
+    &_link{
+      display: block;
+      background: #121426;
+      border-radius: 5px;
+      padding: 6px 10px;
+      transition: all 0.3s;
+      &-gradient{  
+        background: #FFBD23;
+        box-shadow: inset 8px 4px 5px 0px #F26124;
+        text-align: center;
+        width: 180px;
+        padding: 2px;
+        border-radius: 5px;
+        animation: background 3s infinite;
+        animation-timing-function: ease-in-out;
+        &:first-child{
+          margin-right: 40px;
+        }
+      }
+      &:hover{
+        color: white;
+      }
+      
+  }
+  }
+  .franchises_link{
+      display: inline-block;
+      margin: 15px 0;
+      
+      transition: color .2s;
+      &:hover > .franchises_link-hover{
+        
+        color: #fff;
+       
+      }
+ }
+ &_commercial{
+   margin-bottom: 10px;
+ .commercial_link{
+   text-decoration: underline;
+   transition: color .2s;
+   &:hover{
+     color: #fff;
+   }
+ }
+}
+ .address_legalAdress{
+   text-align: center;
+   line-height: 23px;
+   font-size: 15px;
+ }
+
+  a{
+    text-decoration: none;
+    color: #9f9ab1;
+  }
+}
+@media(max-width:425px){
+  .footer .guide{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer .guide_link-gradient:first-child{
+    margin-right: 0;
+  }
+  .footer .guide_link-gradient{
+    margin: 0;
+    margin-bottom: 10px;
+  }
+  .footer .franchises_link {
+    display: flex;
+    text-align: center;
+    flex-direction: column;}
+}

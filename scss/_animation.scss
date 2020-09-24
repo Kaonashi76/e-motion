@@ -1,0 +1,62 @@
+@keyframes background {
+  50%{
+    background: #F26124;
+    box-shadow: inset 8px 4px 10px 0px #FFBD23;
+  }
+  }
+  @keyframes polygon {
+    50% {
+      transform: rotate(180deg);
+    }
+    100%{
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes rotate{
+    25%{
+      transform: rotate(15deg);
+    }
+    50%{
+      transform: rotate(0deg);
+    }
+    75%{
+      transform: rotate(-15deg);
+    }
+    100%{
+      transform: rotate(0deg);
+    }
+  }
+  
+  @keyframes polygon_header {
+    50% {
+      transform: rotate(-180deg);
+    }
+    100%{
+      transform: rotate(-360deg);
+    }
+  }
+
+@keyframes dash {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes full-rotate {
+  0% {
+      transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes full-rotate-background {
+  0% {
+      transform:translateX(-10%) translateY(-65%) rotate(360deg);
+  }
+  100% {
+    transform:translateX(-10%) translateY(-65%) rotate(0deg);
+  }
+}
+
