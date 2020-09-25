@@ -1,34 +1,17 @@
-
-
 let slidesImg=document.querySelectorAll(".usage_slides_img")
 let slidesText=document.querySelectorAll(".usage_slides-text")
 let slidesStep=document.querySelectorAll(".usage_step")
+let mapPrice = document.querySelector(".map_price_container")
+let cityActive = document.querySelector(".select__current");
+let selectHeader = document.querySelectorAll('.select__header');
+let selectItem = document.querySelectorAll('.select__item');
+let linkNav = document.querySelectorAll('[href^="#"]')
+let V = 0.2;  
+let button_left =  document.querySelector(".button_left")
+let button_right = document.querySelector(".button_right")  
+let slideIndex = 1;
+let taimer = setInterval(()=>{plusSlides(1)},3000)
 
-
-
-
-function active (){
-  slidesText.forEach(text=>{
-    if(text.classList.contains("usage_slides-text-active")){
-      text.classList.remove("usage_slides-text-active")
-    }
-  })
-  slidesImg.forEach(img=>{
-    if(img.classList.contains("usage_slides_img-active")){
-      img.classList.remove("usage_slides_img-active")
-    }
-  })
-  slidesStep.forEach(step=>{
-    if(step.classList.contains("usage_step-active")){
-      step.classList.remove("usage_step-active")
-    }
-  })
-  slidesImg[this.dataset.index - 1].classList.add("usage_slides_img-active")
-  slidesText[this.dataset.index - 1 ].classList.add("usage_slides-text-active")
-  for(let j = 0; j<this.dataset.index;j++){
-    slidesStep[j].classList.add("usage_step-active")
-  }
-}  
 let price = [
   //Севастополь 1-3 3-круглосуточный
 {
@@ -639,9 +622,6 @@ let station_obj= [
 "address": "г. Москва, Комсомольский проспект, 2-4"
 }
 ];
-
-let mapPrice = document.querySelector(".map_price_container")
-
 let city = [
 {name:"Москва",
   coords:[55.7522200, 37.6155600]
@@ -674,7 +654,7 @@ let city = [
   coords:[44.9892000,41.1234000]
 },
 ]
-let cityActive = document.querySelector(".select__current");
+let Map;
 
 if(localStorage.getItem('city') && localStorage.getItem('coords')){
   cityActive.innerText = localStorage.getItem('city')
@@ -685,7 +665,7 @@ if(localStorage.getItem('city') && localStorage.getItem('coords')){
     localStorage.setItem('coords', city[0].coords)
 
   }
-  let Map;
+  
 function initPrice (station) {
   let template = `
        <p class="station-name"> <img src="./img/maps_mark.svg" alt="метка">${station.name}</p>`
@@ -773,6 +753,7 @@ function initPrice (station) {
    }
    mapPrice.innerHTML=template
 }
+
 ymaps.ready(()=>{
     let marks = []
     Map = new ymaps.Map("map", { 
@@ -816,10 +797,6 @@ clusterer.add(marks);
 Map.geoObjects.add(clusterer);
 })
 
-
-let selectHeader = document.querySelectorAll('.select__header');
-let selectItem = document.querySelectorAll('.select__item');
-
 selectHeader.forEach(item => {
     item.addEventListener('click', selectToggle)
 });
@@ -847,10 +824,10 @@ function selectChoose() {
         Map.setCenter(localStorage.getItem('coords').split(','));
         localStorage.setItem('city', text);
 }
-var linkNav = document.querySelectorAll('[href^="#"]'), //выбираем все ссылки к якорю на странице
-V = 0.2;  // скорость, может иметь дробное значение через точку (чем меньше значение - тем больше скорость)
+
+
 for (var i = 0; i < linkNav.length; i++) {
-linkNav[i].addEventListener('click', function(e) { //по клику на ссылку
+  linkNav[i].addEventListener('click', function(e) { //по клику на ссылку
     e.preventDefault(); //отменяем стандартное поведение
     var w = window.pageYOffset,  // производим прокрутка прокрутка
         hash = this.href.replace(/[^#]*(.*)/, '$1');  // к id элемента, к которому нужно перейти
@@ -886,10 +863,7 @@ if(pageYOffset > 2300){
 document.querySelector(".blog_header").classList.add("header-animation")
 }
 });
-let button_left =  document.querySelector(".button_left")
-let button_right = document.querySelector(".button_right")  
-var slideIndex = 1;
-let taimer = setInterval(()=>{plusSlides(1)},3000)
+
 showSlides(slideIndex);
 
 function plusSlides(n) {
@@ -912,8 +886,6 @@ showSlides(slideIndex = n);
 
 function showSlides(n) {
 
-var i;
-
 if (n > slidesImg.length) {
 slideIndex = 1
 for(let j = 0; j<slidesImg.length;j++){
@@ -924,22 +896,14 @@ if (n < 1) {
 slideIndex = slidesImg.length
 }
 
-for (i = 0; i < slidesImg.length; i++) {
+for (let i = 0; i < slidesImg.length; i++) {
 slidesImg[i].classList.remove("usage_slides_img-active");
 slidesText[i].classList.remove("usage_slides-text-active");
 }
+
 for(let j = 0; j<slideIndex;j++){
     slidesStep[j].classList.add("usage_step-active")
 }
 slidesImg[slideIndex - 1].classList.add("usage_slides_img-active");
 slidesText[slideIndex - 1].classList.add("usage_slides-text-active");
-
-}
-for(let i = 0; i<slidesStep.length; i++){
-slidesStep[i].addEventListener("click",function(){
-  clearInterval(taimer)
-
-   taimer = setInterval(()=>{plusSlides(1)},3000)
-})
-
 }

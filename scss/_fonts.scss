@@ -1,14 +1,3 @@
-@font-face {
-  font-family: 'Noah-medium';
-  src: url('../fonts/Noah-Medium.eot');
-  src: local('../fonts/Noah Medium'), local('Noah-Medium'),
-      url('../fonts/Noah-Medium.eot?#iefix') format('embedded-opentype'),
-      url('../fonts/Noah-Medium.woff2') format('woff2'),
-      url('../fonts/Noah-Medium.woff') format('woff'),
-      url('../fonts/Noah-Medium.ttf') format('truetype');
-  font-weight: 500;
-  font-style: normal;
-}
 
 @font-face {
   font-family: 'Noah-bold';
@@ -45,9 +34,7 @@
 	font-style: normal;
 }
 
-@mixin medium {
-  font-family: 'Noah-medium', sans-serif;
-}
+
 
 @mixin bold {
   font-family: 'Noah-bold', sans-serif;
