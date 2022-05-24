@@ -1,0 +1,47 @@
+@font-face {
+  font-family: 'GetVoIP Grotesque';
+  src: url('../fonts/GetVoIPGrotesque/GetVoIPGrotesque.eot');
+  src: local('../fonts/GetVoIPGrotesque/GetVoIP Grotesque'), local('GetVoIPGrotesque'),
+    url('../fonts/GetVoIPGrotesque/GetVoIPGrotesque.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/GetVoIPGrotesque/GetVoIPGrotesque.woff') format('woff'),
+    url('../fonts/GetVoIPGrotesque/GetVoIPGrotesque.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/Montserrat/');
+  src: local('../fonts/Montserrat/Montserrat Regular'), local('Montserrat-Regular'),
+    url('../fonts/Montserrat/?#iefix') format('embedded-opentype'),
+    url('../fonts/Montserrat/Montserrat-Regular.woff') format('woff'),
+    url('../fonts/Montserrat/Montserrat-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/Montserrat/Montserrat-SemiBold.eot');
+  src: local('../fonts/Montserrat/Montserrat SemiBold'), local('Montserrat-SemiBold'),
+    url('../fonts/Montserrat/Montserrat-SemiBold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Montserrat/Montserrat-SemiBold.woff') format('woff'),
+    url('../fonts/Montserrat/Montserrat-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@mixin bold {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+}
+
+@mixin regular {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: normal;
+}
+
+@mixin header {
+  font-family: 'GetVoIP Grotesque', sans-serif;
+  font-weight: bold;
+}
