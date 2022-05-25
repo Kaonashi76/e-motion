@@ -1,8 +1,10 @@
+$header-height: 70px;
+
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 70px;
+  height: $header-height;
 
   .logo {
 
@@ -13,7 +15,6 @@
   }
 
   .navigation {
-    @include bold;
 
     &__list {
       display: flex;
@@ -29,6 +30,8 @@
     }
 
     &__link {
+      @include bold;
+
       color: $text-color;
       font-size: $menu-text-size;
       text-decoration: none;

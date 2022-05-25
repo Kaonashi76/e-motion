@@ -3,3 +3,32 @@
   margin: auto;
   padding: 0 10px;
 }
+
+* {
+  @include regular;
+}
+
+@mixin section-header( $center: false,
+                       $font-size: 40px,
+                       $margin-bottom: 32px,
+                     ) {
+  @include header;
+  font-size: $font-size;
+  line-height: 60px;
+  color: $text-color;
+
+  @if $center {
+    margin: 0 auto;
+  }
+  margin-bottom: $margin-bottom;
+}
+
+@mixin section-description ( $font-size: 16px,
+                             $text-align: center,
+                           ) {
+  @include regular;
+  font-size: $font-size;
+  line-height: 22px;
+  color: $text-color;
+  text-align: $text-align;
+}
