@@ -18,7 +18,7 @@
   color: $text-color;
 
   @if $center {
-    margin: 0 auto;
+   text-align: center;
   }
   margin-bottom: $margin-bottom;
 }
