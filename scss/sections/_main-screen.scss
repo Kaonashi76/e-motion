@@ -3,19 +3,18 @@ $main-screen-height: 100vh;
 
 .main-screen {
   width: 100%;
-  margin-top: 70px;
   height: calc(#{$main-screen-height} - #{$main-screen-top-margin});
   background-image: url('../images/main-bg.svg');
   background-repeat: no-repeat;
   background-position-x: center;
-  background-position-y: top;
-  background-size:  105vh;
+  background-position-y: center;
+  background-size:  contain;
 
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
 
-  padding-bottom: 90px;
+  padding-bottom: 0px;
 
   .content {
 
