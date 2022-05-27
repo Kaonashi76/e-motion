@@ -1,0 +1,36 @@
+.tariff {
+  height: 720px;
+  background-image: url('../images/tariffs-bg.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  &__header {
+    @include section-header($center: true);
+    margin-bottom: 5em;
+    margin-top: 0px;
+  }
+
+  .content {
+    &__header {
+      @include bold;
+      color: $text-color;
+      font-size: 20px;
+      line-height: 24px;
+      max-width: 515px;
+
+    }
+
+    &__description{
+      @include regular;
+      color: $text-color;
+      font-size: 16px;
+      line-height: 24px;
+      max-width: 515px;
+    }
+
+    .container {
+      padding-left: 70px;
+    }
+  }
+}
