@@ -9,16 +9,11 @@
     border-radius: 30px;
     position: relative;
     overflow: hidden;
-    width: 790px;
+    width: 711px;
     height: 400px;
     box-shadow: 0px -15px 30px #4f56b21a, 0px 15px 30px #4f56b21a;
     margin: 0 auto;
     cursor: pointer;
-
-    &:hover > .video__play-btn {
-      width: 80px;
-      height: 80px;
-    }
   }
 
   &__preview {
@@ -54,4 +49,16 @@
   &__play-btn-icon {
     transform: translateX(15%);
   }
+
+  .youtube-video {
+    width: 100%;
+    height: 100%;
+    display: none;
+    border-radius: 30px;
+
+    &--show {
+      display: block;
+    }
+  }
+
 }

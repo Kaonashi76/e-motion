@@ -21,18 +21,21 @@
       padding: 13px 0;
       color: $text-color;
       list-style-type: none;
+      list-style: none;
       display: flex;
       align-items: center;
+      outline: 0;
 
       &::webkit-details-marker {
         display: none;
       }
 
+
       &:before {
         content: '';
         display: inline-block;
-        width: 34px;
-        height: 34px;
+        min-width: 34px;
+        min-height: 34px;
         background-image: url('../images/icon/accordion-hiden.svg');
         background-position: center;
         background-repeat: no-repeat;
@@ -60,5 +63,13 @@
     &:hover {
       cursor: pointer;
     }
+  }
+
+  details summary::-webkit-details-marker {
+    display: none
+  }
+
+  details > summary {
+    list-style: none;
   }
 }

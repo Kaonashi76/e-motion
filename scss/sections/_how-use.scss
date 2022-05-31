@@ -1,0 +1,124 @@
+.how-use {
+  background-image: url('../images/how-use-bg.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  padding: 200px 0;
+
+  .itcss__indicators {
+    display: none;
+  }
+
+  &__header {
+    @include section-header;
+  }
+  &__guide {
+    @include bold;
+    padding: 8px 30px;
+    border: 1px solid;
+    font-size: 16px;
+    line-height: 18px;
+    border-color: #FF7F09;
+    color: $text-color;
+    border-radius: 30px;
+    text-decoration: none;
+    background-color: #f7f5f8;
+  }
+  &__content {
+    margin-left: 30px;
+  }
+
+  .slider {
+    &__container {
+      display: flex;
+      flex-direction: row;
+    }
+
+    &__images {
+      display: flex;
+      position: relative;
+      flex-wrap: nowrap;
+      overflow: hidden;
+      max-height: 534px;
+      max-width: 555px;
+    }
+
+    .sliderImgesRoll {
+    
+      max-height: 534px;
+      max-width: 555px;
+    }
+    
+    &__img {
+      width: 555px;
+    }
+
+    &__contents {
+      display: flex;
+      flex-wrap: nowrap;
+      overflow: hidden;
+      height: 185px;
+      max-height: 185px;
+      max-width: 345px;
+    }
+
+    &__content {
+      min-width: 345px;
+
+      &-header {
+        display: block;
+        @include bold;
+        color: $text-color;
+        font-size: 20px;
+        line-height: 24px;
+      }
+
+      &-text {
+        display: block;
+        @include regular;
+        color: $text-color;
+        font-size: 16px;
+        line-height: 22px;
+      }
+    }
+
+    &__control {
+      margin-top: 100px;
+
+      &-btn {
+        width: 25px;
+        height: 25px;
+        padding: 0px;
+        border-radius: 100%;
+        border: 2px solid transparent;
+        margin-right: 5px;
+        transition: border .1s;
+        background: none;
+
+        &:last-child {
+          margin-right: 0px;
+        }
+
+        &:hover {
+          cursor: pointer;
+          border: 2px solid #FFB805;
+        }
+
+        &.btn-active {
+          border: 2px solid #FF7F09;
+        }
+
+        &::before {
+          content: '';
+          display: block;
+          width: 12px;
+          height: 12px;
+          background: linear-gradient(199.98deg, #FF7F09 -27.5%, #FFB805 86.67%);
+          border-radius: 100%;
+          transform: translateX(40%) translateY(1px);
+        }
+
+      }
+    }
+  }
+}

@@ -7,6 +7,9 @@
   <title>Сеть проката электросамокатов</title>
   <link rel="shortcut icon" href="./images/icon/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="./css/main.min.css">
+
+  <link rel="stylesheet" href="./css/simple-adaptive-slider.css">
+ 
 </head>
 <body>
   <header class="container header">
@@ -60,6 +63,7 @@
   </header>
 
   <main class="main">
+
     <section class="container main-screen ">
       <div class="content content__container">
         <h1 class="content__header">Насладись движением!</h1>
@@ -97,6 +101,7 @@
         </a>
       </div>
     </section>
+
     <section class="container aboute">
       <h2 class="aboute__header">
         О платформе
@@ -137,7 +142,85 @@
     </section>
 
     <section class="how-use">
+      <div class="container">
+
+
+        <div class="slider__container">
+          <div class="slider__images">
+            <div id="slider__img" class="itcss">
+              <div class="itcss__wrapper">
+                <div class="itcss__items">
+                  <img
+                    class="slider__img itcss__item"
+                    src="./images/slider/step-1.png"
+                    alt="Шаг 1. Скачать бесплатное мобильное приложение e-motion"
+                  >
+                  <img
+                    class="slider__img itcss__item"
+                    src="./images/slider/step-2.png"
+                    alt="Шаг 2. Пройти быструю регистрацию"
+                  >
+                  <img
+                    class="slider__img itcss__item"
+                    src="./images/slider/step-3.png"
+                    alt="Шаг 3. Отсканировать QR-код и взять транспортное средство"
+                  >
+                  <img
+                    class="slider__img itcss__item"
+                    src="./images/slider/step-4.png"
+                    alt="Шаг 4. Также можно найти станцию или виртуальную парковку на карте приложения"
+                  >
+                  </div>
+                </div>
+              </div>
+          </div>
+
+          <div class="how-use__content">
+            <h2 class="how-use__header">
+              Как пользоваться?
+            </h2>
+            <div class="slider__contents">
+              <div id="slider__contents" class="itcss">
+                <div class="itcss__wrapper">
+                  <div class="itcss__items">
+                    <div class="slider__content itcss__item">
+                      <h3 class="slider__content-header">Скачать бесплатное мобильное<br>приложение e-motion</h3>
+                      <p class="slider__content-text">Приложение доступно<br>для iOS и Android</p>
+                    </div>
+                    <div class="slider__content itcss__item">
+                      <h3 class="slider__content-header">Пройти быструю<br>регистрацию</h3>
+                      <p class="slider__content-text">Для регистрации Вы получите<br>проверочный код по телефону</p>
+                    </div>
+                    <div class="slider__content itcss__item">
+                      <h3 class="slider__content-header">Отсканировать QR-код<br> и взять транспортное средство</h3>
+                      <p class="slider__content-text">Взять СИМ можно со станции<br>или с виртуальной парковки</p>
+                    </div>
+                    <div class="slider__content itcss__item">
+                      <h3 class="slider__content-header">Также можно найти станцию<br>или виртуальную парковку<br>на карте приложения</h3>
+                      <p class="slider__content-text">Взять самокат или детский транспорт<br>и наслаждаться прогулкой</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a
+              class="how-use__guide"
+              href=""
+            >
+              Видеоинструкция
+            </a>
+
+            <div class="slider__control">
+              <button data-index="0" class="slider__control-btn btn-active"></button>
+              <button data-index="1" class="slider__control-btn"></button>
+              <button data-index="2" class="slider__control-btn"></button>
+              <button data-index="3" class="slider__control-btn"></button>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
+
     <section class="tariff">
       <h2 class="tariff__header">
         Тарифы
@@ -168,6 +251,14 @@
                 class="video__play-btn-icon"
               >
             </button>
+            <iframe
+              id="youtube-video"
+              data-src="https://www.youtube.com/embed/PGWdVW7dIr8?autoplay=1&mute=1"
+              class="youtube-video"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
           </div>
         </div>
     </section>
@@ -292,11 +383,12 @@
         </p>
       </details>
     </section>
+
     <section class="container chat">
       <h2 class="chat__header">Напишите нам, мы онлайн!</h2>
       <div class="chat__iframe-container">
         <iframe
-          class="chat__iframe"
+          class="chat__iframe "
           src="https://jivo.chat/lsBMRYJJ5x"
           frameborder="0"
         ></iframe>
@@ -304,7 +396,6 @@
     </section>
   </main>
 
-  </iframe>
   <footer class="footer">
     <div class="container footer__contacts contacts">
       <div class="contacts__container">
@@ -371,9 +462,11 @@
         <a class="footer__about-assenting-link" href="https:\\e-motion24.ru">Пользовательское соглашение</a>
       </div>
     </div>
-
   </footer>
-
+  <script defer src="./js/simple-adaptive-slider.js"></script>
   <script src="./js/accardion.js"></script>
+  <script src="./js/slider.js"></script>
+  <script src="./js/video.js"></script>
+  <script src="./js/chat.js"></script>
 </body>
 </html>
