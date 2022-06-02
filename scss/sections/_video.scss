@@ -1,5 +1,5 @@
 .video {
-  padding: 100px 0px;
+  padding-bottom: 100px;
 
   &__header {
     @include section-header($center: true);
@@ -62,3 +62,43 @@
   }
 
 }
+
+@media (max-width: 800px) {
+  .video__player {
+    width: 100%;
+    height: 100%;
+  }
+
+  .video__play-btn {
+    width: 50px;
+    height: 50px;
+  }
+
+  .video__play-btn-icon {
+      width: 15px;
+  }
+
+  .video .youtube-video {
+    width: 100%;
+    height: 300px;
+  }
+}
+
+@media (max-width: 600px) {
+  .video {
+    padding: 50px 0px;
+  }
+}
+
+@media (max-width: 450px) {
+  .video .youtube-video {
+    height: 250px;
+  }
+}
+
+@media (max-width: 400px) {
+  .video .youtube-video {
+    height: 100%;
+  }
+}
+

@@ -11,7 +11,9 @@
 
   &__description {
     @include section-description($text-align: center);
-    max-width: 760px;
+    max-width: 860px;
+    padding-left: 50px;
+    padding-right: 50px;
   }
 
   &__advantages {
@@ -58,4 +60,35 @@
     }
   }
 
+}
+
+@media (max-width: 620px) {
+  .aboute {
+    .advantages {
+      align-items: center;
+      flex-direction: column;
+      &__item {
+        margin-bottom: 30px;
+      }
+    }
+
+    .aboute__advantages {
+      margin-top: 35px;
+    }
+  }
+}
+
+
+@media (max-width: 480px) {
+  .aboute {
+    &__header {
+      margin-bottom: 0px;
+    }
+
+    &__description {
+      font-size: 14px;
+      padding-right: 25px;
+      padding-left: 25px;
+    }
+  }
 }

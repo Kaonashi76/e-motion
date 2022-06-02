@@ -117,3 +117,55 @@
     }
   }
 }
+
+@media (max-width: 1300px) {
+  .footer {
+    background-size: cover;
+  }
+}
+
+@media (max-width: 900px) {
+  .footer {
+    margin-top: 30px;
+
+    .contacts__img {
+      width: 170px;
+    }
+  }
+}
+
+@media (max-width: 520px) {
+  .footer {
+    .contacts__img {
+      display: none;
+    }
+
+   .contacts__franchise {
+      max-width: 450px;
+    }
+  }
+
+  .footer__about-container {
+    justify-content: center;
+    text-align: center;
+    padding: 30px;
+
+    .content-about__company-info {
+      flex-direction: column;
+      font-size: 14px;
+    }
+
+    .content-about__company-info-item {
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
+
+   .content-about__company-address {
+      font-size: 14px;
+      max-width: 210px;
+   }
+   .footer__about-assenting-link {
+     height: auto;
+   }
+  }
+}
