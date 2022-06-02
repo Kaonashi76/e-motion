@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="./css/simple-adaptive-slider.css">
 </head>
 <body>
-  <!-- <header class="container header">
+ <header class="container header">
     <a
       class="header__logo logo"
       href="./index.html"
@@ -27,7 +27,7 @@
         <li class="navigation__item">
           <a
             class="navigation__link"
-            href="#"
+            href="#about"
           >
             О платформе
           </a>
@@ -35,7 +35,7 @@
         <li class="navigation__item">
           <a
             class="navigation__link"
-            href="#"
+            href="#how-use"
           >
             Как пользоваться?
           </a>
@@ -43,7 +43,7 @@
         <li class="navigation__item">
           <a
             class="navigation__link"
-            href="#"
+            href="#tariff"
           >
             Тарифы
           </a>
@@ -51,7 +51,7 @@
         <li class="navigation__item">
           <a
             class="navigation__link"
-            href="#"
+            href="#faq"
           >
             FAQ
           </a>
@@ -59,22 +59,68 @@
       </ul>
     </nav>
   </header>
+  <div class="hamburger-menu">
+    <input id="menu__toggle" type="checkbox" />
+    <label class="menu__btn" for="menu__toggle">
+      <span></span>
+    </label>
 
+    <ul class="menu__box">
+      <li>
+        <a
+          class="menu__item"
+          href="#about"
+        >
+          О платформе
+        </a>
+      </li>
+      <li>
+        <a
+          class="menu__item"
+          href="#how-use"
+        >
+          Как пользоваться?
+      </a>
+      </li>
+      <li>
+        <a
+          class="menu__item"
+          href="#tariff"
+        >
+          Тарифы
+      </a>
+      </li>
+      <li>
+        <a
+          class="menu__item"
+          href="#faq"
+        >
+          FAQ
+        </a>
+      </li>
+    </ul>
+  </div>
   <main class="main">
 
-    <section class="container main-screen ">
-      <div class="content content__container">
-        <h1 class="content__header">Насладись движением!</h1>
-        <p class="content__description">e-motion — современная система аренды самокатов, электробайков, детских машинок и другого электротранспорта.</p>
-        <a
-          class="content__link"
-          href=""
+    <section class="main-screen">
+      <div class="content">
+        <div class="content__container">
+          <h1 class="content__header">Насладись движением!</h1>
+          <p class="content__description">e-motion — современная система аренды самокатов, электробайков, детских машинок и другого электротранспорта.</p>
+          <a
+            class="content__link"
+            href="https://emotion-sharing.com/"
+          >
+            Купить франшизу
+          </a>
+        </div>
+        <img
+          class="content__img"
+          src="./images/main-bg-man.png"
+          alt="Мальчик на самокате"
         >
-          Купить франшизу
-        </a>
       </div>
-
-      <div class="mobile-app mobile-app__container">
+      <div class="container mobile-app mobile-app__container">
         <a
           class="mobile-app__link"
           href="https://play.google.com/store/apps/details?id=ru.emotion24.velorent.official"
@@ -99,8 +145,8 @@
         </a>
       </div>
     </section>
- -->
-    <section class="container aboute">
+
+    <section id='about' class="container aboute">
       <h2 class="aboute__header">
         О платформе
       </h2>
@@ -139,8 +185,8 @@
       </div>
     </section>
 
-<!--
-    <section class="how-use">
+
+    <section id='how-use' class="how-use">
       <div class="container">
 
         <div class="slider__container">
@@ -218,8 +264,8 @@
         </div>
       </div>
     </section>
--->
-    <section class="tariff">
+
+    <section id='tariff' class="tariff">
       <h2 class="tariff__header">
         Тарифы
       </h2>
@@ -268,7 +314,7 @@
         </div>
     </section>
 
-   <section class="container questions">
+   <section id='faq' class="container questions">
       <h2 class="questions__header">FAQ</h2>
 
       <details class="questions__details details">
@@ -416,7 +462,7 @@
         <div class="contacts__link-container">
           <a
             class="contacts__link"
-            href="https:\\vk.com"
+            href="https://vk.com/emotion_scootershering"
           >
             <img
               class="contacts__link-img"
@@ -426,7 +472,7 @@
           </a>
           <a
             class="contacts__link"
-            href="https:\\youtube.com"
+            href="https://www.youtube.com/channel/UCCcPgQ2oTmmGIuf0mqBZFXg/featured"
           >
             <img
               class="contacts__link-img"
@@ -464,7 +510,7 @@
             <p class="content-about__company-info-item">КПП 780601001</p>
           </div>
         </div>
-        <a class="footer__about-assenting-link" href="https:\\e-motion24.ru">Пользовательское соглашение</a>
+        <a class="footer__about-assenting-link" href="https://e-motion24.ru/agreement.html">Пользовательское соглашение</a>
       </div>
     </div>
   </footer>
