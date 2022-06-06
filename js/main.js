@@ -10,13 +10,9 @@ if (screenWidth <= 520) {
 
 const hamburgerMenu = document.querySelector('#menu__toggle');
 
-hamburgerMenu.addEventListener('change', ()=> {
-  if (hamburgerMenu.checked) {
-    document.body.style.overflow = 'hidden';
-    return;
-  }
-
-  document.body.style.overflow = 'auto';
+hamburgerMenu.addEventListener('change', (e)=> {
+  e.preventDefault();
+  hamburgerMenu.setAttribute('checked', !hamburgerMenu.checked);
 });
 
 const anchors = document.querySelectorAll('a[href*="#"]')
@@ -24,6 +20,7 @@ const anchors = document.querySelectorAll('a[href*="#"]')
 for (let anchor of anchors) {
   anchor.addEventListener('click', function (e) {
     e.preventDefault()
+    hamburgerMenu.checked = false;
     const blockID = anchor.getAttribute('href').substr(1)
     document.getElementById(blockID).scrollIntoView({
       behavior: 'smooth',

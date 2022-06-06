@@ -10,17 +10,17 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    color: $text-color;
+    color: $text-white;
 
     &__img {
       width: 230px;
-      height: a;
+      height: auto;
       margin-bottom: 25px;
     }
 
     &__mail {
       @include bold;
-      color: $text-color;
+      color: $text-white;
       font-size: 16px;
       line-height: 24px;
     }
@@ -49,7 +49,7 @@
       line-height: 24px;
       &-link {
         @include bold;
-        color: $text-color;
+        color: $text-white;
         font-size: 16px;
         line-height: 24px;
       }

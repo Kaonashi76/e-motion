@@ -1,4 +1,5 @@
 .tariff {
+  margin-top: 50px;
   height: 720px;
   background-image: url('../images/tariffs-bg.svg');
   background-position: center;
@@ -29,7 +30,7 @@
 
     &__header {
       @include bold;
-      color: $text-color;
+      color: $text-white;
       font-size: 20px;
       line-height: 24px;
       max-width: 515px;
@@ -38,7 +39,7 @@
 
     &__description{
       @include regular;
-      color: $text-color;
+      color: $text-white;
       font-size: 16px;
       line-height: 24px;
       max-width: 515px;
@@ -52,7 +53,7 @@
   }
 }
 
-@media (max-width: 1600px) {
+@media (max-width: 1380px) {
   .tariff {
     background-size: cover;
   }
@@ -62,10 +63,12 @@
   .tariff {
     background-position: bottom;
     .content {
+     
       flex-direction: column;
       align-items: flex-end;
 
       &__container {
+        margin-top: 100px;
         width: 100%;
       }
     }
@@ -106,5 +109,5 @@
     background-position: bottom;
     height: 570px;
   }
-  
+
 }

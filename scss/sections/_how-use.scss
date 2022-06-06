@@ -44,11 +44,10 @@
     }
 
     .sliderImgesRoll {
-    
       max-height: 534px;
       max-width: 555px;
     }
-    
+
     &__img {
       width: 555px;
     }
@@ -83,7 +82,7 @@
     }
 
     &__control {
-      margin-top: 100px;
+      margin-top: 20px;
 
       &-btn {
         width: 25px;
@@ -115,7 +114,7 @@
           height: 12px;
           background: linear-gradient(199.98deg, #FF7F09 -27.5%, #FFB805 86.67%);
           border-radius: 100%;
-          transform: translateX(40%) translateY(1px);
+          transform: translateX(40%);
         }
 
       }
@@ -127,5 +126,4 @@
   .how-use {
     display: none;
   }
-  
 }

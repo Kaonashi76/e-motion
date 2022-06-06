@@ -51,6 +51,14 @@
         <li class="navigation__item">
           <a
             class="navigation__link"
+            href="#chat"
+          >
+            Связаться с нами
+          </a>
+        </li>
+        <li class="navigation__item">
+          <a
+            class="navigation__link"
             href="#faq"
           >
             FAQ
@@ -89,6 +97,14 @@
         >
           Тарифы
       </a>
+      </li>
+      <li id="chat_link">
+        <a
+          class="menu__item"
+          href="#chat"
+        >
+          Связаться с нами
+        </a>
       </li>
       <li>
         <a
@@ -247,12 +263,6 @@
                 </div>
               </div>
             </div>
-            <a
-              class="how-use__guide"
-              href=""
-            >
-              Видеоинструкция
-            </a>
 
             <div class="slider__control">
               <button data-index="0" class="slider__control-btn btn-active"></button>
@@ -385,16 +395,25 @@
           Как вывести деньги на карту с личного счета e-motion?
         </summary>
         <p class="details__hiden-text">
-          Необходимо отправить на почту hello@e-motion24.ru ФИО, номер телефона, который привязан к аккаунту e-motion, и скрин раздела «Кошелек».
+          Необходимо отправить на почту hello@e-motion24.ru ФИО, номер телефона, который привязан к аккаунту e-motion и скрин раздела «Кошелек».
         </p>
       </details>
 
       <details class="questions__details details">
         <summary class="details__summary">
-          За что списали перед прокатом 300 рублей?
+          За что списали перед прокатом 300 рублей? (Сумма может отличаться по городам)
         </summary>
         <p class="details__hiden-text">
           Сработала система холдирования (бронирования средств на карте), которые возвращаются после проката. Если Вы покатаетесь больше, чем на 300 рублей, то спишется дополнительная сумма, если меньше, чем на 300 рублей, то остаток вернется.
+        </p>
+      </details>
+
+      <details class="questions__details details">
+        <summary class="details__summary">
+          Как воспользоваться паузой?
+        </summary>
+        <p class="details__hiden-text">
+          Во время проката зайти в раздел приложения «Заказы» и нажать кнопку Пауза. Пауза доступна только для гибридных самокатов (зелёного цвета) и может быть включена в любом месте.
         </p>
       </details>
 
@@ -435,7 +454,7 @@
       </details>
     </section>
 
-    <section class="container chat">
+    <section id="chat" class="container chat">
       <h2 class="chat__header">Напишите нам, мы онлайн!</h2>
       <div class="chat__iframe-container">
         <iframe
