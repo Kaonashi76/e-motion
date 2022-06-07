@@ -2,7 +2,7 @@
 document.addEventListener('DOMContentLoaded', () => {
   const slidersLength = 4;
   let activeSlider = 0;
-
+  let active = false;
   let interval;
 
   const sliderImg = new ItcSimpleSlider('#slider__img', {
@@ -23,6 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const controls = document.querySelectorAll('.slider__control-btn');
 
   function animation() {
+    active = true;
     interval = setInterval(() => {
       if (activeSlider === slidersLength) {
         activeSlider = 0;
@@ -43,7 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 document.addEventListener('scroll', () => {
   let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-  if(scrollTop>= 1400) {
+  if(scrollTop>= 1400 && active === false) {
     animation();
   }
 })

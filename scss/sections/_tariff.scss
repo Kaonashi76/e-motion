@@ -1,11 +1,11 @@
 .tariff {
-  margin-top: 50px;
-  padding-top: 50px;
+  margin-top: 100px;
+
   height: 720px;
   background-image: url('../images/tariffs-bg.svg');
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 70%;
 
   &__header {
     @include section-header($center: true);
@@ -54,6 +54,19 @@
   }
 }
 
+@media (max-width: 1940px) {
+  .tariff {
+    background-size: contain;
+  }
+}
+
+@media (max-width: 1000px) {
+  .tariff {
+    background-size: 150%;
+    background-position-y: 120px;
+  }
+}
+
 @media (max-width: 1380px) {
   .tariff {
     background-size: 120%;
@@ -92,7 +105,15 @@
     background-position: center;
     height: 630px;
     margin-top: 0px;
+    padding-top: 100px;
 
+    .content {
+      justify-content: flex-start;
+
+      &__container {
+        margin-top: 50px;
+      }
+    }
     &__header {
       text-align: left;
       padding: 0 25px;
@@ -120,6 +141,7 @@
     background-position: bottom;
     height: 570px;
     margin-bottom: 40px;
+    padding-top: 0px;
     .content__container {
       margin-top: 0px;
     }
