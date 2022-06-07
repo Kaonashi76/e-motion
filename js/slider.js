@@ -1,6 +1,6 @@
 
 document.addEventListener('DOMContentLoaded', () => {
-  const slidersLength = 3;
+  const slidersLength = 4;
   let activeSlider = 0;
 
   let interval;
@@ -38,21 +38,26 @@ document.addEventListener('DOMContentLoaded', () => {
           el.classList.add('btn-active');
         }
       })
-    }, 5000);
+    }, 10000);
   }
 
-  animation()
+document.addEventListener('scroll', () => {
+  let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+  if(scrollTop>= 1400) {
+    animation();
+  }
+})
 
   controls.forEach(el=> {
     el.addEventListener('click', event => {
+      clearInterval(interval);
       const elClick = event.target;
       clearClasses();
       elClick.classList.add('btn-active');
       sliderImg._moveTo(elClick.dataset.index, true);
       sliderContents._moveTo(elClick.dataset.index, true);
       activeSlider = +elClick.dataset.index;
-      clearInterval(interval);
-      setTimeout(animation,500)
+      animation();
     })
   });
 

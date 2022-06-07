@@ -112,7 +112,9 @@ $main-screen-height: 100vh;
 
 @media (max-width: 960px) {
   .main-screen {
-    background-size: cover;
+    background-size: 90%;
+    background-position-x: 140px;
+
     .content {
       &__img {
         height: 450px;
@@ -145,15 +147,14 @@ $main-screen-height: 100vh;
 @media (max-width: 730px) {
   .main-screen {
     height: calc(#{$main-screen-height} - 30px);
-    background-image: url('../images/main-mobile-bg.svg');
-    background-size: cover;
-    background-position: center;
+    background-position-x: center;
+    background-position-y: 250px;
     margin-bottom: 50px;
     .content {
       flex-direction: column;
       &__img {
        width: 172px;
-       height: auto;
+       height: 300px;
        margin: 0 auto;
        margin-top: 50px;
        margin-bottom: 25px;
@@ -205,6 +206,7 @@ $main-screen-height: 100vh;
 
 @media (max-width: 500px) {
   .main-screen {
+    background-size: 120%;
     .mobile-app {
       &__link {
         justify-content: flex-start;

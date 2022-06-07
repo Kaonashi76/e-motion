@@ -1,4 +1,6 @@
 .questions {
+  padding-top: 50px;
+
   &__header {
     @include section-header($center: true);
   }
