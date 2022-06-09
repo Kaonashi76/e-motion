@@ -29,6 +29,7 @@ $main-screen-height: 100vh;
 
     &__header {
       @include section-header($font-size: 60px, $margin-bottom: 19px);
+      color: red;
     }
 
     &__description {
@@ -209,6 +210,7 @@ $main-screen-height: 100vh;
     background-image: none;
     height: auto;
     margin-bottom: 20px;
+    margin-top: -40px;
     .content {
       margin-top: 0;
     }
