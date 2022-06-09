@@ -7,7 +7,8 @@
   padding: 200px 0;
 
   #slider__img {
-    width: 400px;
+    max-width: 400px;
+    width: 100%;
   }
 
   .itcss__indicators {
@@ -203,7 +204,8 @@
 @media (max-width: 450px) {
   .how-use {
     #slider__img {
-      width: 300px;
+      max-width: 300px;
+      width: 100%;
     }
     .slider {
       &__content {
