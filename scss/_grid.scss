@@ -4,6 +4,10 @@
   padding: 0 10px;
 }
 
+html.jivo-site-full-block {
+  overflow-y: hidden;
+}
+
 * {
   @include regular;
 }

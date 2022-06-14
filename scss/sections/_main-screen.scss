@@ -236,3 +236,20 @@ $main-screen-height: 100vh;
     }
   }
 }
+
+@media (max-width: 400px) {
+  .main-screen {
+    .content {
+      margin-top: 0;
+      padding: 0;
+      &__container {
+        margin-left: 35px;
+      }
+
+      &__img {
+        background-size:  cover;
+        height: 365px;
+      }
+    }
+  }
+}
