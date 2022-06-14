@@ -212,13 +212,19 @@ $main-screen-height: 100vh;
     margin-top: -40px;
     .content {
       margin-top: 0;
+      padding: 0;
+
+      &__container {
+        margin-left: 35px;
+      }
     }
     .content__img {
       background-image: url('../images/main-bg-mobile.svg');
       background-repeat: no-repeat;
       background-position-x: center;
       background-position-y: bottom;
-      background-size:  contain;
+      background-size: cover;
+      height: 390px;
       width: 100%;
       margin-top: 15px;
       margin-bottom: -50px
@@ -232,23 +238,6 @@ $main-screen-height: 100vh;
       }
       &::before {
         content: none;
-      }
-    }
-  }
-}
-
-@media (max-width: 400px) {
-  .main-screen {
-    .content {
-      margin-top: 0;
-      padding: 0;
-      &__container {
-        margin-left: 35px;
-      }
-
-      &__img {
-        background-size:  cover;
-        height: 365px;
       }
     }
   }
